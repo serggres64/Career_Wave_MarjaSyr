@@ -1,0 +1,1 @@
+1 Задание. awk '{if ($10 ~ /^[0-9]+$/) bytes[$1] += $10} END {for (ip in bytes) print bytes[ip], "bytes for", ip}' access.log | sort -nr
